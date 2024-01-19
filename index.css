@@ -7,3 +7,43 @@
 html{
   font-size: 62.5%;
 }
+
+header{
+  height: 100vh;
+  width: 25rem;
+  background-color: rgb(16, 16, 16);
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+  position: fixed;
+}
+.nav-links{
+height: 100%;
+text-decoration: none;
+list-style: none;
+align-items: center;
+display: flex;
+flex-direction: column;
+justify-content:center;
+gap: 5rem;
+width: 100%;
+}
+.nav-links li a{
+  text-decoration: none;
+  font-size: 3.5rem;
+  color:white;
+}
+nav{
+  height: 100%;
+  margin: auto 2rem;
+}
+.nav-links li a span{
+margin-left: 12rem;
+position: absolute;
+color: black;
+opacity:0;
+}
+.nav-links li a:hover .nav-links li a span{
+  opacity:1;
+}
