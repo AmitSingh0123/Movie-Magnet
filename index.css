@@ -1,49 +1,126 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
-
-header{
-  height: 100vh;
-  width: 25rem;
-  background-color: rgb(16, 16, 16);
-  display:flex;
+.grid-container{
+  display: flex;
+  flex-direction: column;
+}
+.item-2{
+  margin-left:20rem;
+  font-size:10rem;
+  color:goldenrod;
+  background-color: black;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
   align-items: center;
-  flex-direction:column;
   justify-content: center;
+}
+
+
+
+header {
+  height: 100vh;
+  width: 20rem;
+  background-color: rgb(16, 16, 16);
+  display: grid;
   position: fixed;
+  height: 100%;
+  padding: 0rem .5rem;
 }
+
+.logo-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top:5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.subscribe {
+  padding: .7rem 1.5rem;
+  border: 1px solid goldenrod;
+  background: transparent;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe:hover {
+  background-color: rgba(218, 165, 32, 0.193);
+}
+
 .nav-links{
-height: 100%;
-text-decoration: none;
-list-style: none;
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content:center;
-gap: 5rem;
-width: 100%;
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 20rem;
 }
+
 .nav-links li a{
   text-decoration: none;
-  font-size: 3.5rem;
-  color:white;
+  font-size: 2.5rem;
+  color: white;
 }
-nav{
+.nav-links li{
+  padding:.5rem 1rem;
+  display:inline-flex;
+  align-items: center;
+
+}
+.nav-links li:hover{
+  width:110%;
+  height:fit-content;
+  border: 1px solid goldenrod;
+  border-radius: 1rem;
+  background-color: rgba(218, 165, 32, 0.193);
+}
+.nav-links li.active{
+  width:110%;
+  height:fit-content;
+  border: 1px solid goldenrod;
+  border-radius: 1rem;
+  background-color: rgba(218, 165, 32, 0.193);
+}
+
+
+nav {
   height: 100%;
   margin: auto 2rem;
 }
-.nav-links li a span{
-margin-left: 12rem;
-position: absolute;
-color: black;
-opacity:0;
+
+.nav-links li a span {
+  margin-left: 1.5rem;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  width: 100%;
+  font-size: 2.5rem;
+  transition: all ease .5s;
+  width: fit-content;
 }
-.nav-links li a:hover .nav-links li a span{
-  opacity:1;
+
+.nav-links:hover .nav-link {
+  opacity: 1;
 }
