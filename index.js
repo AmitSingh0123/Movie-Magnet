@@ -1,7 +1,7 @@
 
 onLoad();
 function onLoad(){
-  setInterval(updateImgs, 3000); 
+  setInterval(updateImgs, 4000); 
 }
 function updateImgs(){
   let images = document.querySelectorAll('.image');

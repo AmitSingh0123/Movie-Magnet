@@ -1,0 +1,125 @@
+.hero-section {
+  width: 100%;
+  height: 100rem;
+  background-color: rgb(16, 16, 16);
+  overflow: hidden;
+}
+
+.slider-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px #5050501a;
+}
+
+.slider-container .image {
+  background-size: cover;
+  width: 15rem;
+  height: 20rem;
+  position: absolute;
+  top: 80%;
+  left: 100%;
+  border-radius: 2rem;
+  transform: translate(0%, -25%);
+  box-shadow: 0 10px 20px #50505043;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.slider-container .image:nth-child(1),
+.slider-container .image:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.slider-container .image:nth-child(3) {
+  left: 50%;
+}
+
+.slider-container .image:nth-child(4) {
+  left: calc(50% + 220px);
+}
+
+.slider-container .image:nth-child(5) {
+  left: calc(50% + 440px);
+}
+
+.slider-container .image:nth-child(n + 6) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+
+.image .content {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  width: 38rem;
+  text-align: left;
+  transform: translate(0, -50%);
+  display: none;
+  background: blur(1.3rem);
+}
+
+.slider-container .image:nth-child(2) .content {
+  display: block;
+}
+
+.content .title {
+  font-size: 6.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .title-para {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .book-now {
+  padding: 1.5rem 7rem;
+  font-size: 2rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border: 1px solid goldenrod;
+  border-radius: 1rem;
+  background: transparent;
+  background-color: rgba(218, 165, 32, 0.193);
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.2s 1 forwards;
+}
+
+.content .book-now:hover {
+  background-color: rgba(218, 165, 32, 0.388);
+  scale: 1.1;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(10rem, 10rem);
+    filter: blur(3.3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
