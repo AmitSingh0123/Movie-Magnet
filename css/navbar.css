@@ -1,15 +1,14 @@
 header {
   height: 100vh;
   width: 20rem;
-  background-color: rgb(16, 16, 16);
   display: grid;
-  position: fixed;
+  position:fixed;
   height: 100%;
   padding: 0rem 1rem;
 }
 
 header:hover {
-  box-shadow: rgba(0, 0, 0, 0.56) 300px 300px 300px 300px;
+  box-shadow: rgba(0, 0, 0, 0.56) 24px 11px 37px 14rem;
 }
 
 .logo-container {
@@ -67,15 +66,13 @@ header:hover {
   padding: .5rem 1rem;
   display: inline-flex;
   align-items: center;
-
+ 
 }
 
 .nav-links li:hover {
   width: 110%;
-  height: fit-content;
   border: 1px solid goldenrod;
   border-radius: 1rem;
-  background-color: rgba(218, 165, 32, 0.193);
 }
 
 .nav-links li.active {

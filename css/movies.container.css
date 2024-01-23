@@ -24,12 +24,10 @@
 }
 
 .movies-comtainer .movie-title {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  color: goldenrod;
+  color:white;
   width: fit-content;
-  padding: 2rem;
-  border-bottom: 3px solid white;
 }
 
 .movie img {
@@ -105,4 +103,11 @@
 
 .book-btn:hover,.play-btn:hover{
   background-color: rgba(218, 165, 32, 0.392);
+}
+.play-now-btn{
+  position:absolute;
+  font-size: 6rem;
+  color: goldenrod;
+  top:30%;
+  left:40%;
 }

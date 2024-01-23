@@ -1,21 +1,29 @@
 @import 'css/navbar.css';
 @import 'css/hero.css';
 @import 'css/movies.container.css';
+@import 'css/footer.css';
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  background-color: rgb(16, 16, 16);
+}
 html {
   font-size: 62.5%;
 }
 section {
   width: 100%;
 }
-
+.grid-container{
+  display: grid;
+  grid-template-columns:20rem auto;
+}
 .item-2 {
-  margin-left: 20rem;
+  grid-column-start:2;
   background-color: rgb(16, 16, 16);
   color: goldenrod;
 }
