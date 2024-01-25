@@ -43,6 +43,7 @@
 .movie-contant p {
   font-size: 1rem;
   margin: 1rem 0;
+  opacity: .8;
 }
 
 .movie:hover .movie {
